@@ -41,7 +41,7 @@ public class Model {
 			if(dao.getAirlinesNumber(a) > x) {
 				//inserisco aeroporto come vertice
 				this.grafo.addVertex(a);
-			}
+			}}
 
 			for(Rotta r : dao.getRotte(idMap)) {
 				
@@ -60,8 +60,6 @@ public class Model {
 				
 			}
 		}
-		
-	}
 	
 	public int vertexNumber() {
 		return this.grafo.vertexSet().size();
